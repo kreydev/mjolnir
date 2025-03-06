@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "local sandbox thing.sln"
+    "dotnet.defaultSolution": "mjolnir.sln"
 }

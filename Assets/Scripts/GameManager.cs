@@ -7,7 +7,6 @@ public class GameManager : MonoBehaviour
     [Header("Game load settings")]
     public Player playerPrefab;
     public ItemDrop[] spawnItems;
-    public Item startHolding;
     public Vector2 xBounds;
     public Vector2 zBounds;
 
@@ -16,16 +15,11 @@ public class GameManager : MonoBehaviour
 
     void Start() {
         player = Instantiate(playerPrefab);
-        player.holding = startHolding;
         foreach (ItemDrop item in spawnItems) {
             for (int i = 0; i < item.count; ++i) {
                 GameObject itemGO = Instantiate(item.item).gameObject;
                 itemGO.transform.position = new Vector3(rand.Range(xBounds.x, xBounds.y), 3, rand.Range(zBounds.x, zBounds.y));
             }
         }
-    }
-
-    void Update() {
-        
     }
 }

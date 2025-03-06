@@ -42,7 +42,8 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 12
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -336,9 +337,8 @@ MonoBehaviour:
   spawnItems:
   - item: {fileID: 367853579431537483, guid: 514ae1eb61f0b0043838922831178492, type: 3}
     count: 15
-  - item: {fileID: 6146766208270535918, guid: 7d01a328e3fe8474b9cf2dd93bb6dbd9, type: 3}
+  - item: {fileID: 2562093860965684612, guid: 7d01a328e3fe8474b9cf2dd93bb6dbd9, type: 3}
     count: 2
-  startHolding: {fileID: 6146766208270535918, guid: 7d01a328e3fe8474b9cf2dd93bb6dbd9, type: 3}
   xBounds: {x: 15, y: -15}
   zBounds: {x: 15, y: -15}
   player: {fileID: 0}
